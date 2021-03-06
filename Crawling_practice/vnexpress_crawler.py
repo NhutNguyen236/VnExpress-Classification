@@ -25,7 +25,7 @@ import time
 driver = webdriver.Chrome('D:/chromedriver_win32/chromedriver.exe')
 
 # Define url path
-main_url = "".join(["https://vnexpress.net/kinh-doanh"])
+main_url = "".join(["https://vnexpress.net/doi-song-p20"])
 # Get url path
 driver.get(main_url)
 
@@ -90,9 +90,8 @@ for u in url_array:
     xpath1 = "/html/body/section[5 or 4 or 3]/div/div[1 or 2]/div[1]/ul/li[0 or 1]/a"
     xpath2 = "/html/body/section[4]/div/div[1]/ul/li[1]/a"
     # Solution for this problem is | operator
-    #/html/body/section[4]/div/div[1]/div[1]/ul/li[1]/a
 
-    topic = driver.find_element_by_xpath(xpath1)
+    topic = driver.find_element_by_xpath(xpath2 or xpath1)
     
     sheet1.write(row, 2, topic.text)
 
@@ -101,4 +100,4 @@ for u in url_array:
     time.sleep(1.5)
 
 # Save excel file .... and hhhm this needs a specification, fosho
-workbook.save('./Data/kinh-doanh.xls')
+workbook.save('./Data/Raw_Data/doi_song2.xls')

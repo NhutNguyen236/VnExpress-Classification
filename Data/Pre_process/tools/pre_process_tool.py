@@ -14,6 +14,7 @@ files = os.listdir(cwd)
 print(files)
 
 stops = stopwords.words('english')
+print(stops)
 
 for file in files:
     if file.endswith('.xls'):
@@ -25,8 +26,8 @@ for file in files:
         excel_data_df['Topic'] = excel_data_df['Topic'].str.lower()
 
         # Remove punctuation
-        excel_data_df['Title'] = excel_data_df['Title'].str.replace('[^\w\s]','')
-        excel_data_df['Content'] = excel_data_df['Content'].str.replace('[^\w\s]+','')
+        excel_data_df['Title'] = excel_data_df['Title'].str.replace('[^\w\s]',' ')
+        excel_data_df['Content'] = excel_data_df['Content'].str.replace('[^\w\s]+',' ')
 
         # Remove stop words
         excel_data_df['Title'] = excel_data_df['Title'].apply(lambda x: " ".join(x for x in x.split() if x not in stops))

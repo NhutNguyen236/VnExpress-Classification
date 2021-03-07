@@ -15,7 +15,7 @@ Evaluate by Accuracy
 ## :bookmark: Objective evaluation 
 - [x] Crawl data from Vnexpress from 5 topics, 40 articles/topic => 200 articles in total
 - [x] Data pre-processing
-- [] Extract model using TF-IDF feature -> Converting Text to Features using TF-IDF
+- [x] Extract model using TF-IDF feature -> Converting Text to Features using TF-IDF
 - [] Using SVM for training of document classification
 - [] Evaluate by Accuracy
 
@@ -80,3 +80,4 @@ pip install selenium
 - For Stopwords removal, nltk needs to be `nltk.download()` first to download stopwords lib
 
 ### :book: String tokenization
+- 

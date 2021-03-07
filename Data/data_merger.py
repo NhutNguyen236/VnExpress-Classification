@@ -8,7 +8,7 @@ import os
 import pandas as pd 
 import xlwt
 
-cwd = os.path.abspath('./Data/Raw_Data')
+cwd = os.path.abspath('./Data/Pre_process/processed_data/VN')
 files = os.listdir(cwd)
 
 print(str(files))
@@ -16,7 +16,7 @@ print(str(files))
 df = pd.DataFrame()
 for file in files:
     if file.endswith('.xls'):
-        df = df.append(pd.read_excel('./Data/Raw_Data/' + file), ignore_index=True) 
+        df = df.append(pd.read_excel('./Data/Pre_process/processed_data/VN/' + file), ignore_index=True) 
 df.head() 
 merge_path_xls = "./Data/dataset_merged.xls"
 merge_path_xlsx = "./Data/dataset_merged.xlsx"

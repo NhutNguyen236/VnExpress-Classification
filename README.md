@@ -14,7 +14,7 @@ Evaluate by Accuracy
 
 ## :bookmark: Objective evaluation 
 - [x] Crawl data from Vnexpress from 5 topics, 40 articles/topic => 200 articles in total
-- [] Data pre-processing
+- [x] Data pre-processing
 - [] Extract model using TF-IDF feature -> Converting Text to Features using TF-IDF
 - [] Using SVM for training of document classification
 - [] Evaluate by Accuracy
@@ -71,3 +71,12 @@ pip install selenium
     <img src = "https://i.ibb.co/1XDFRBT/image.png" width="250px" height="100px"/>
 </p>
 
+- Tasks that I did
+### :book: Lowercase
+
+### :book: Punctuation removal
+
+### :book: Stopwords removal
+- For Stopwords removal, nltk needs to be `nltk.download()` first to download stopwords lib
+
+### :book: String tokenization

@@ -16,8 +16,8 @@ Evaluate by Accuracy
 - [x] Crawl data from Vnexpress from 5 topics, 40 articles/topic => 200 articles in total
 - [x] Data pre-processing
 - [x] Extract model using TF-IDF feature -> Converting Text to Features using TF-IDF
-- [] Using SVM for training of document classification
-- [] Evaluate by Accuracy
+- [x] Using SVM for training of document classification
+- [x] Evaluate by Accuracy
 
 
 

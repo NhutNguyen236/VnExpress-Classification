@@ -1,6 +1,11 @@
 # WELCOME TO `Crawling_practice`
 - This is a place for you to practice crawling and scraping skill
 
+## WebDriver with Microsoft Edge
+- This is just the same with ChromeDriver but this time, it is Edge
+- First thing first, you need to visit [this page](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/) here for the details and beyond 
+- Then do the same thing that you did with that ChromeDriver :smile:
+
 ## Contents
 - [towards data science](https://towardsdatascience.com/web-scraping-e-commerce-website-using-selenium-1088131c8541) - highly recommend this writing since it is extremely specific and go straight to the using of Selenium
 - [finding the exact xpath of element](https://www.guru99.com/xpath-selenium.html) - actually, the link above got this one too but with this, you will have more options 
